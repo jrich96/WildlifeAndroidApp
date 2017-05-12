@@ -1,11 +1,11 @@
 # WildlifeAndroidApp
 Android app I made for a university project.
 
-##Home Page
+## Home Page
 ![alt text](https://github.com/jrich96/WildlifeAndroidApp/blob/master/Screenshot1.png)
 
-##Learn Page
+## Learn Page
 ![alt text](https://github.com/jrich96/WildlifeAndroidApp/blob/master/Screenshot2.png)
 
-##Quiz Page
+## Quiz Page
 ![alt text](https://github.com/jrich96/WildlifeAndroidApp/blob/master/Screenshot3.png)
