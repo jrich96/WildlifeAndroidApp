@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group android:id="@+id/homeGroup">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_action_home"
+        android:title="Home"
+        />
+</group>
+
+<group android:id="@+id/itemsGroup">
+    <item
+        android:id="@+id/nav_learn"
+        android:icon="@drawable/ic_action_learn"
+
+        android:title="Learn about Wildlife" />
+    <item
+        android:id="@+id/nav_quiz"
+        android:icon="@drawable/ic_action_quiz"
+        android:title="Wildlife Quiz" />
+    <item
+        android:id="@+id/nav_wlfeed"
+        android:icon="@drawable/ic_action_feed"
+        android:title="Online Feed from BBC Wildlife" />
+
+    <item
+        android:id="@+id/nav_video"
+        android:icon="@drawable/ic_action_video"
+        android:title="Watch Videos" />
+    <item
+        android:id="@+id/nav_doc"
+        android:icon="@drawable/ic_action_doc"
+        android:title="Document Wildlife" />
+
+</group>
+
+
+
+
+
+
+
+</menu>

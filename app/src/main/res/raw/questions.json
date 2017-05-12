@@ -1,0 +1,38 @@
+[
+    {
+	   "Questiontxt" : "On average, how often do snow leopards kill a large animal?",
+	   "WrongAnswer1" : "Twice a week",
+	   "WrongAnswer2" : "Twice a day",
+	   "CorrectAnswer" : "Twice a month",
+	   "Image" : "leopard"
+	},
+	{
+		"Questiontxt" : "What is the most amount of bamboo that a panda can eat in a day?",
+		"WrongAnswer1" : "40kg",
+		"WrongAnswer2" : "10kg",
+		"CorrectAnswer" : "20kg",
+		"Image" : "panda"
+	},
+	{
+	   "Questiontxt" : "Approximately, how far do Adelie penguins venture from the sea to their nest sites?",
+	   "WrongAnswer1" : "30 miles",
+	   "WrongAnswer2" : "6 miles",
+	   "CorrectAnswer" : "60 miles",
+	   "Image" : "penguin"
+	},
+	{
+	   "Questiontxt" : "What is special about the dragonfly which enables it to fly in any direction?",
+	   "WrongAnswer1" : "It has several wings",
+	   "WrongAnswer2" : "It has a body part that spins like a helicopter",
+	   "CorrectAnswer" : "The angle of it's wings can be controlled independently",
+	   "Image" : "dragonfly"
+	},
+	{
+	   "Questiontxt" : "Antarctica is one of the two continents where vipers cannot be found. What is the other?",
+	   "WrongAnswer1" : "Asia",
+	   "WrongAnswer2" : "Europe",
+	   "CorrectAnswer" : "Australia",
+	   "Image" : "viper"
+	}
+	
+]

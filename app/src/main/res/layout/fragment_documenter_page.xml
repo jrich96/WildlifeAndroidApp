@@ -1,0 +1,66 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jaker.wildlife2.DocumenterPageFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/docPageNameTV"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/docPageCatTV"
+            android:textSize="26dp"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/docPageAmmountTV"
+            android:textSize="26dp"
+            android:layout_margin="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/docPageLocTV"
+            android:textSize="26dp"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/docPageActivityTV"
+            android:textSize="26dp"
+            android:layout_margin="10dp"
+            />
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/docPageTimeTV"
+            />-->
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+

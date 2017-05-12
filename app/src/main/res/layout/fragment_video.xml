@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jaker.wildlife2.VideoFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watch Iguana vs Snakes"
+            android:id="@+id/iguanaVidBtn"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Watch Kangaroo Fight"
+            android:id="@+id/kangVidBtn"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/tigerBtn"
+            android:text="Watch Tiger Cubs Swimming"/>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+

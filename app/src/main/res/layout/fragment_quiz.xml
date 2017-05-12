@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jaker.wildlife2.QuizFragment"
+    android:orientation="vertical"
+    android:id="@+id/quizLayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/questTV"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="Question"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="12pt"
+
+            />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/qImage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+
+    <!--<Button
+        android:id="@+id/wrongAns1Btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/wrongAns2Btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/correctAnsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        />-->
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

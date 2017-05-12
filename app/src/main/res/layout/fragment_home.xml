@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jaker.wildlife2.HomeFragment"
+    android:id="@+id/homeLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome! Use the side bar to navigate to different features"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:id="@+id/help1TV"
+        />
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/wildlifeViewPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.TabLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/tabDots"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+        app:tabBackground="@drawable/tab_selector"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scroll across to see different images"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:id="@+id/help2TV"/>
+
+</RelativeLayout>

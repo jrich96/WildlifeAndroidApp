@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jaker.wildlife2.DocumenterFragment"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2.5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/docNameTV"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/docCatTV"
+                android:visibility="gone"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:clickable="false"
+                android:focusable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/docAmmountTV"
+                android:visibility="gone"
+                android:textSize="20dp"
+                android:clickable="false"
+                android:focusable="false"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/docLV"
+        android:clickable="true"
+        android:focusable="true">
+
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:tint="#FFFFFF"
+
+        />
+
+</FrameLayout>
