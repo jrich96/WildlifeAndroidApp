@@ -1,6 +1,6 @@
 # WildlifeAndroidApp
 Android app I made for a university project.
-It has five main pages:
+It has six main pages:
 - Home Page
 - Learn Page
 - Quiz Page
