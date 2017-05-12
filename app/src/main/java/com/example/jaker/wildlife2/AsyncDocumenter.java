@@ -21,6 +21,7 @@ public class AsyncDocumenter extends AsyncTask<Void, Integer, ArrayList<Document
     private int req;
     private int id;
     private Document document;
+    private String category;
 
     public AsyncDocumenter(DocumentInterface delegate, Context context)
     {
@@ -28,7 +29,6 @@ public class AsyncDocumenter extends AsyncTask<Void, Integer, ArrayList<Document
         this.req = 1;
         DBhelper = new DBHelper(context);
         DB = DBhelper.getWritableDatabase();
-
     }
 
     public AsyncDocumenter(DocumentInterface delegate, Context context, int id)
@@ -55,6 +55,15 @@ public class AsyncDocumenter extends AsyncTask<Void, Integer, ArrayList<Document
         this.req = 3;
         this.document = document;
         this.id = id;
+        DBhelper = new DBHelper(context);
+        DB = DBhelper.getWritableDatabase();
+    }
+
+    public AsyncDocumenter(DocumentInterface delegate, Context context, String cat)
+    {
+        this.delegate = delegate;
+        this.req = 5;
+        this.category = cat;
         DBhelper = new DBHelper(context);
         DB = DBhelper.getWritableDatabase();
     }
@@ -93,6 +102,9 @@ public class AsyncDocumenter extends AsyncTask<Void, Integer, ArrayList<Document
                 case 4:
                     DBhelper.deleteById(DB, id);
                     documents = convertToDocument(DBhelper.getAll(DB));
+                    break;
+                case 5:
+                    documents = convertToDocument(DBhelper.selectByCat(DB, category));
                     break;
 
             }

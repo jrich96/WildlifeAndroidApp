@@ -208,4 +208,28 @@ public class DBHelper extends SQLiteOpenHelper
 
         db.insert(Contract.Document.TABLE_NAME, null, cv);
     }
+
+    public Cursor selectByCat(SQLiteDatabase db, String cat)
+    {
+        try
+        {
+            //Cursor c = db.rawQuery("SELECT * FROM " + Contract.Document.TABLE_NAME + " WHERE " + Contract.Document.COLNAME_category + " = " + cat, null);
+            String[] columns = new String[]{
+                    Contract.Document.COLNAME_id,
+                    Contract.Document.COLNAME_name,
+                    Contract.Document.COLNAME_activity,
+                    Contract.Document.COLNAME_location,
+                    Contract.Document.COLNAME_category,
+                    Contract.Document.COLNAME_amount};
+            String whereClause = Contract.Document.COLNAME_category + " = ?";
+            String[] whereArgs = new String[] {cat};
+            return db.query(Contract.Document.TABLE_NAME, columns, whereClause, whereArgs, null, null, null);
+        }
+        catch (Exception e)
+        {
+            Log.e("CAT SELECT ERROR", e.getMessage());
+        }
+
+        return null;
+    }
 }
