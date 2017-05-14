@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.nav_wlfeed:
 
-                Fragment wff = new WildlifeFeedFragment();
+                Fragment wff = new WildlifeFeedSetupFragment();
                 if (!ignoreBack)
                 {
                     fm.beginTransaction().replace(R.id.fragment_container, wff).addToBackStack("TAG").commit();

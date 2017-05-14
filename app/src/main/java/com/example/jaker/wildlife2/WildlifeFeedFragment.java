@@ -1,6 +1,7 @@
 package com.example.jaker.wildlife2;
 
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 
 import java.util.ArrayList;
 
@@ -21,6 +23,9 @@ public class WildlifeFeedFragment extends Fragment {
 
     private ArrayList<WildlifeFeed> wlFeed = null;
     private View view;
+    private ListView lv;
+    private ProgressBar progressBar;
+
     public WildlifeFeedFragment() {
         // Required empty public constructor
     }
@@ -30,28 +35,44 @@ public class WildlifeFeedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        getFeed();
-        //this.view = inflater.inflate(R.layout.list_views, container, false);
+
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_wildlife_feed, container, false);
     }
 
-    private void getFeed()
+
+    @Override
+    public void onViewCreated(View view, Bundle SavedBundle) {
+        super.onViewCreated(view, SavedBundle);
+        lv = (ListView) getView().findViewById(R.id.wlfList);
+        progressBar = (ProgressBar) getView().findViewById(R.id.progressBar);
+        String url = getArguments().getString("URL");
+        //progress = new ProgressDialog(getContext());
+        //progress.setTitle("Loading Feed");
+        //progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
+        //progress.show();
+        getFeed(url);
+
+    }
+
+
+    private void getFeed(String url)
     {
         new AsyncWildlifeFeed(new WildlifeFeedResponse() {
             @Override
             public void processFinish(ArrayList<WildlifeFeed> wlf) {
+                //progress.dismiss();
                 wlFeed = wlf;
                 viewFeed();
             }
-        }).execute();
+        },url, progressBar).execute();
     }
 
     private void viewFeed()
     {
 
         WildlifeFeedAdapter wlfAdapter = new WildlifeFeedAdapter(getContext(), R.layout.fragment_wildlife_feed, wlFeed);
-        final ListView lv = (ListView) getView().findViewById(R.id.wlfList);
         lv.setAdapter(wlfAdapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -63,4 +84,5 @@ public class WildlifeFeedFragment extends Fragment {
             }
         });
     }
+
 }
