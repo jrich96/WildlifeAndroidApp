@@ -1,5 +1,5 @@
 # WildlifeAndroidApp
-Android app I made for a university project.
+Android app I made for a university project. Download [the apk](https://github.com/jrich96/WildlifeAndroidApp/blob/master/app-debug.apk) if you just want to install the app on a device and not view code.  
 It has six main pages:
 - Home Page
 - Learn Page
